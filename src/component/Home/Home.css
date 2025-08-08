@@ -1,0 +1,158 @@
+/* frontend/src/Home.css */
+
+.banner {
+  background-image: url("https://images.unsplash.com/photo-1558981420-d463d12db73b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQzNzB8MHwxfHNlYXJjaHwxfHxzcG9ydHMlMjBjYXIlMjBwbGFpbiUyMGJhY2tncm91bmR8ZW58MHx8fHx8MTcwNjY5NTA5N3ww&ixlib=rb-4.0.3&q=80&w=1080");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.banner > h1,
+.banner > p,
+.banner > a {
+  position: relative;
+  z-index: 2;
+}
+
+.banner > h1 {
+  margin: 2vmax 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 5vw, 4rem);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.banner > p {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 300;
+  margin-bottom: 2vmax;
+}
+
+.banner > a > button {
+  cursor: pointer;
+  background-color: #f75d59;
+  border: none;
+  border-radius: 50px;
+  padding: 1.5vmax 3vmax;
+  transition: all 0.5s;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1vmax;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+}
+
+.banner > a > button:hover {
+  background-color: #e54c49;
+  transform: scale(1.05);
+}
+
+.homeHeading {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.4vmax;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  width: 20vmax;
+  padding: 1vmax;
+  margin: 5vmax auto;
+  color: rgb(0, 0, 0, 0.7);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2vmax 5vmax;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.productCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.productCard > img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.productCard > div {
+  padding: 1vmax;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productCard > p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 1vmax;
+  margin: 0;
+}
+
+.productCard > span {
+  padding: 0 1vmax 1vmax;
+  color: #f75d59;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 600px) {
+  .productCard > p {
+    font-size: 1.7vmax;
+  }
+
+  .productCard > div {
+    margin: 0vmax;
+    display: block;
+  }
+
+  .productCard > span {
+    font-size: 1.5vmax;
+  }
+
+  .productCard > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "Roboto";
+  }
+}
