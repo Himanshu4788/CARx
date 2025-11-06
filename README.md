@@ -1,30 +1,28 @@
 # CARx
 
-🚘 Carpooling System
+🛒 CARx – Car Drop-Shipping Platform
 
-A smart and scalable ride-sharing web application that matches passengers and drivers efficiently based on location and route similarity.
-Built with Node.js, Express, EJS, and Java, this project demonstrates distributed system concepts, clustering algorithms, and secure backend design.
+A full-stack car drop-shipping web application that enables users to list, manage, and purchase car products in real time.
+Designed with scalability and reliability in mind using Node.js, Express.js, and MongoDB.
 
 🔹 Features
 
-🔄 Smart Ride Allocation: Implemented K-Means clustering, TSP, and Genetic Algorithm to optimize driver–rider matching (up to 50–60% efficiency gain).
+🧑‍💼 Multi-User Platform: Supports sellers and buyers with secure session-based authentication.
 
-🔐 Secure Authentication & Authorization: Role-based access with encrypted sessions.
+⚙️ RESTful APIs: Built modular APIs optimized for scalability and fault-tolerant performance under high concurrency.
 
-🧩 Modular Architecture: Designed for scalability, fault tolerance, and code maintainability.
+🧩 Scalable Backend Architecture: Clean, service-oriented structure for easy expansion and maintenance.
 
-⚙️ Robust Validation & Error Handling: Ensured data integrity and consistent API responses.
+🔒 Secure Data Management: Integrated validation, error handling, and session security for safe transactions.
 
-🌐 Real-Time UI Updates: Dynamic interface built using EJS templates with live route tracking simulation.
+📈 Real-World Product Flow Simulation: Mimics inventory management, order placement, and dashboard interactions.
 
 🧰 Tech Stack
 
-Frontend: HTML, CSS, EJS
+Frontend: HTML, CSS, EJS, Tailwind CSS
 
-Backend: Node.js, Express.js, Java
+Backend: Node.js, Express.js
 
 Database: MongoDB
 
-Algorithms: K-Means, TSP, Genetic Algorithm
-
-Tools: Git, VS Code, Postman
+Tools: Git, VS Code, Postman, GitHub
