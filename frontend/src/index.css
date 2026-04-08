@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --red: #e63946;
+  --dark: #0a0a0a;
+  --card: #141414;
+  --border: #2a2a2a;
+  --text: #f0f0f0;
+  --muted: #888;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--dark);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+h1, h2, h3 { font-family: 'Bebas Neue', cursive; letter-spacing: 1px; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--dark); }
+::-webkit-scrollbar-thumb { background: var(--red); border-radius: 3px; }
+
+/* Animations */
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes pulse-red { 0%, 100% { box-shadow: 0 0 0 0 rgba(230,57,70,0.4); } 70% { box-shadow: 0 0 0 8px rgba(230,57,70,0); } }
+
+.fade-in { animation: fadeIn 0.4s ease forwards; }
+.card-hover { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(230,57,70,0.15); }
+
+.btn-primary {
+  background: var(--red);
+  color: white;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  letter-spacing: 0.5px;
+}
+.btn-primary:hover { background: #c1121f; transform: translateY(-1px); }
+
+.btn-outline {
+  background: transparent;
+  color: var(--red);
+  border: 1.5px solid var(--red);
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn-outline:hover { background: var(--red); color: white; }
+
+.input-field {
+  background: #1a1a1a;
+  border: 1.5px solid var(--border);
+  color: var(--text);
+  padding: 10px 14px;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 14px;
+  font-family: 'Outfit', sans-serif;
+  transition: border-color 0.2s;
+}
+.input-field:focus { outline: none; border-color: var(--red); }
+
+.glass-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+/* Star rating */
+.stars { color: #f4a261; }
