@@ -11,7 +11,7 @@ const CATEGORIES = [
   { name: "Electric", icon: "⚡", value: "electric" },
   { name: "Military", icon: "🪖", value: "military" },
   { name: "Premium ", icon: "💎", value: "Premium " },
-  { name: "Track-Set", icon: "🎮", value: "other" },
+  { name: "Other", icon: "🎮", value: "other" },
 ];
 
 const Home = () => {
