@@ -31,7 +31,7 @@
       "last 1 firefox version"
     ]
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "https://carx-backend-vc9p.onrender.com",
   "main": "tailwind.config.js",
   "keywords": [],
   "author": "",
