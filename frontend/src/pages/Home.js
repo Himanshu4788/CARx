@@ -10,7 +10,7 @@ const CATEGORIES = [
   { name: "Vintage", icon: "🚗", value: "vintage" },
   { name: "Electric", icon: "⚡", value: "electric" },
   { name: "Military", icon: "🪖", value: "military" },
-  { name: "Luxury", icon: "💎", value: "luxury" },
+  { name: "Premium ", icon: "💎", value: "Premium " },
   { name: "Track-Set", icon: "🎮", value: "other" },
 ];
 
