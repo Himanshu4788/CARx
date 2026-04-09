@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { createProduct, updateProduct, fetchProduct } from "../redux/slices/productSlice";
 import toast from "react-hot-toast";
 
-const CATEGORIES = ["sports", "trucks", "vintage", "electric", "military", "luxury", "bikes", "other"];
+const CATEGORIES = ["sports", "trucks", "vintage", "electric", "military", "Premium", "Bikes", "other"];
 
 const ProductForm = ({ isEdit }) => {
   const dispatch = useDispatch();

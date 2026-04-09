@@ -39,7 +39,7 @@ const productSchema = new mongoose.Schema(
     category: {
       type: String,
       required: [true, "Please enter product category"],
-      enum: ["sports", "Die-Cast", "vintage", "electric", "military", "Premium", "Other"],
+      enum: ["sports", "vintage", "electric", "military", "Premium", "Bikes" ,"Other"],
     },
     images: [
       {
