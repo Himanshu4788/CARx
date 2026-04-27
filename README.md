@@ -60,29 +60,7 @@ npm start
 
 ---
 
-## 🔑 Environment Variables (backend/config/config.env)
 
-```env
-PORT=5000
-NODE_ENV=development
-MONGO_URI=mongodb://localhost:27017/carx
-
-JWT_SECRET=your_secret_key
-JWT_EXPIRE=7d
-COOKIE_EXPIRE=7
-
-RAZORPAY_KEY_ID=rzp_test_xxxx
-RAZORPAY_KEY_SECRET=xxxx
-
-FIREBASE_PROJECT_ID=your_project_id
-FIREBASE_PRIVATE_KEY=your_private_key
-FIREBASE_CLIENT_EMAIL=your_client_email
-FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com
-
-FRONTEND_URL=http://localhost:3000
-```
-
----
 
 ## 🔑 Getting Free API Keys
 
